@@ -1,0 +1,113 @@
+{
+  "intro": "The brands below reflect Applied Graphics' completed projects — some from the company's own published work, others provided directly by the company. Logos and brand names remain the property of their owners. Final client list and any logo/name usage to be confirmed by Applied Graphics before launch.",
+  "verifiedClients": [
+    {
+      "name": "World Cup — MetLife Stadium",
+      "industry": "Sports & Events",
+      "project": "Event & promotional graphics",
+      "source": "Provided by Applied Graphics",
+      "permission": "confirm-rights"
+    },
+    {
+      "name": "Coca-Cola",
+      "industry": "Beverage / National brand",
+      "project": "Brand & equipment graphics",
+      "source": "Provided by Applied Graphics",
+      "permission": "confirm-rights"
+    },
+    {
+      "name": "Amazon",
+      "industry": "Logistics / National brand",
+      "project": "Fleet & facility graphics",
+      "source": "Provided by Applied Graphics",
+      "permission": "confirm-rights"
+    },
+    {
+      "name": "Delta",
+      "industry": "Aviation / Travel",
+      "project": "Airport & facility graphics",
+      "source": "Provided by Applied Graphics",
+      "permission": "confirm-rights"
+    },
+    {
+      "name": "Costa Coffee",
+      "industry": "Food & Beverage",
+      "project": "Self-serve machine wraps (multi-site)",
+      "source": "Provided by Applied Graphics",
+      "permission": "provided"
+    },
+    {
+      "name": "Notorious Boxing Club",
+      "industry": "Fitness (Brooklyn, NY)",
+      "project": "Interior wall mural & window graphics",
+      "source": "Provided by Applied Graphics",
+      "permission": "provided"
+    },
+    {
+      "name": "Hilltop Bicycles",
+      "industry": "Retail / Cycling",
+      "project": "Full delivery-van wrap",
+      "source": "Applied Graphics public gallery",
+      "permission": "needs-permission"
+    },
+    {
+      "name": "MetroPlus Health",
+      "industry": "Healthcare / Insurance",
+      "project": "Mobile outreach vehicle wrap",
+      "source": "Applied Graphics public gallery",
+      "permission": "needs-permission"
+    },
+    {
+      "name": "Cape Cod Healthcare (CRUSH COVID)",
+      "industry": "Healthcare / Public Health",
+      "project": "Mobile treatment center wrap",
+      "source": "Applied Graphics public gallery",
+      "permission": "needs-permission"
+    },
+    {
+      "name": "Garage Kings",
+      "industry": "Home Services / Flooring",
+      "project": "Box-truck wrap & DOT lettering",
+      "source": "Applied Graphics public gallery",
+      "permission": "needs-permission"
+    },
+    {
+      "name": "Door Boy",
+      "industry": "Home Services (Berkeley Heights, NJ)",
+      "project": "Service-van wrap & lettering",
+      "source": "Applied Graphics public gallery",
+      "permission": "needs-permission"
+    },
+    {
+      "name": "Mr. Joe Fix It",
+      "industry": "Home Services / Handyman",
+      "project": "Partial van wrap & lettering",
+      "source": "Applied Graphics public gallery",
+      "permission": "needs-permission"
+    },
+    {
+      "name": "Disney — 'Phineas & Ferb' Tour",
+      "industry": "Entertainment (featured work)",
+      "project": "Tour vehicle wrap & reveal",
+      "source": "appliedgrafx.com/extras.html",
+      "permission": "needs-permission"
+    },
+    {
+      "name": "NBC 'Food Truck Friday' (Munchies)",
+      "industry": "Media / Food (featured work)",
+      "project": "Food-truck wrap featured on NBC",
+      "source": "appliedgrafx.com/extras.html",
+      "permission": "needs-permission"
+    }
+  ],
+  "industries": [
+    { "name": "Contractors & Home Services", "icon": "Hammer", "blurb": "Plumbers, HVAC, electricians, handymen, garage-door and flooring pros." },
+    { "name": "Fleets & Delivery", "icon": "Truck", "blurb": "Vans, box trucks and trailers kept brand-consistent across the whole fleet." },
+    { "name": "Food Trucks & Restaurants", "icon": "ChefHat", "blurb": "Appetite-driven wraps that turn trucks and storefronts into magnets." },
+    { "name": "Healthcare & Public Programs", "icon": "HeartPulse", "blurb": "Mobile clinics, outreach units and treatment centers." },
+    { "name": "Auto, Race & Performance", "icon": "Flag", "blurb": "Color-changes, sponsor liveries and track-tested race graphics." },
+    { "name": "Retail & Storefronts", "icon": "Store", "blurb": "Window graphics, wall murals and building signage." },
+    { "name": "Real Estate & Professional Services", "icon": "Briefcase", "blurb": "Branded vehicles and signage for agents, offices and pros." },
+    { "name": "Events, Tours & Entertainment", "icon": "Sparkles", "blurb": "Eye-catching wraps and reveals for tours and activations." }
+  ]
+}

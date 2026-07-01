@@ -1,0 +1,54 @@
+{
+  "headquarters": {
+    "city": "Kenilworth",
+    "county": "Union County",
+    "state": "New Jersey",
+    "note": "Located 27 minutes from Manhattan with easy access from all major highways (Routes 22, 78, the Parkway and Turnpike)."
+  },
+  "unionCountyTowns": [
+    "Kenilworth",
+    "Cranford",
+    "Westfield",
+    "Garwood",
+    "Clark",
+    "Roselle Park",
+    "Roselle",
+    "Union",
+    "Springfield",
+    "Mountainside",
+    "Berkeley Heights",
+    "New Providence",
+    "Summit",
+    "Scotch Plains",
+    "Fanwood",
+    "Linden",
+    "Rahway",
+    "Elizabeth",
+    "Hillside",
+    "Plainfield",
+    "Winfield"
+  ],
+  "nearbyRegions": [
+    {
+      "label": "Essex County",
+      "examples": ["Newark", "Millburn", "Maplewood", "Irvington", "Bloomfield"]
+    },
+    {
+      "label": "Middlesex County",
+      "examples": ["Edison", "Woodbridge", "South River", "New Brunswick", "Perth Amboy"]
+    },
+    {
+      "label": "Morris & Somerset",
+      "examples": ["Morristown", "Bridgewater", "Somerville", "Chatham"]
+    }
+  ],
+  "extendedRegions": [
+    "New Jersey (statewide)",
+    "New York City & New York State",
+    "Philadelphia, PA",
+    "Connecticut",
+    "Boston, MA"
+  ],
+  "nationalNote": "Outside our direct service area? We can connect your project with vetted installers across the country.",
+  "summary": "Applied Graphics is based in Kenilworth and serves all of Union County and the surrounding New Jersey / New York metro, with regional reach into Philadelphia, Connecticut and Boston."
+}

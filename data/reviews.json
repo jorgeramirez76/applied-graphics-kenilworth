@@ -1,0 +1,84 @@
+{
+  "aggregate": {
+    "rating": 4.9,
+    "reviewCount": 13,
+    "bbbRating": "A+",
+    "bbbAccreditedSince": "2008",
+    "facebookRecommendRate": "100%",
+    "note": "Aggregate rating compiled from public business listings; BBB rating from the Better Business Bureau profile. Confirm and refresh with current Google reviews before launch."
+  },
+  "reviews": [
+    {
+      "id": "rev-roush",
+      "quote": "Mario and his crew do an outstanding job! I used them this year to wrap my Roush Stage 3 that is “track prepped.” I get compliments everywhere I go and the wrap has held up to track events all season. The work is top notch and most people are shocked to learn that the car is wrapped. Well worth getting this done by Applied Graphics!",
+      "author": "Verified customer",
+      "authorNote": "Reviewer name on file with source; withheld pending consent.",
+      "context": "Roush Stage 3 track car wrap",
+      "date": "2017-11-02",
+      "source": "Public business listing (businessyab, aggregating Facebook/Google reviews)",
+      "verified": true
+    },
+    {
+      "id": "rev-nofade",
+      "quote": "Applied Graphics has wrapped street vehicles and race cars for me. Besides being fast, on time and on budget, they use only the highest quality material. One of my vehicles has no fade or issues five years after application.",
+      "author": "Verified customer",
+      "authorNote": "Reviewer name on file with source; withheld pending consent.",
+      "context": "Street & race vehicles, multi-year durability",
+      "date": "2017-11-01",
+      "source": "Public business listing (businessyab, aggregating Facebook/Google reviews)",
+      "verified": true
+    },
+    {
+      "id": "rev-van",
+      "quote": "Very patient and professional. They did a great job on our van; it looks great, and they guided us through the process with very personal service. I will continue to use them on other vehicles and strongly recommend them to anyone looking to make their vehicles “pop” on the road.",
+      "author": "Verified customer",
+      "authorNote": "Reviewer name on file with source; withheld pending consent.",
+      "context": "Commercial van wrap",
+      "date": "2017-11-01",
+      "source": "Public business listing (businessyab, aggregating Facebook/Google reviews)",
+      "verified": true
+    },
+    {
+      "id": "rev-creative",
+      "quote": "I have nothing but praise for Applied Graphics! Their creative team is one of the best and their delivery is always on time. The quality of the product they produce is the best in the industry.",
+      "author": "Verified customer",
+      "authorNote": "Reviewer name on file with source; withheld pending consent.",
+      "context": "Design & delivery",
+      "date": "2017-12-07",
+      "source": "Public business listing (businessyab, aggregating Facebook/Google reviews)",
+      "verified": true
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Certified — with a real warranty",
+      "body": "All installers are 3M-certified and projects use 3M MCS-warranty materials. If a wrap fails due to equipment, ink or material, it gets fixed — guaranteed.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Since 1978",
+      "body": "Decades specializing in vehicle wraps and large-format graphics, with a BBB A+ rating and accreditation since 2008.",
+      "icon": "Award"
+    },
+    {
+      "title": "Everything under one roof",
+      "body": "A full in-house art department plus certified installation — design, print and install in our 6,000 sq ft heated/cooled facility or on the road at your location.",
+      "icon": "Building2"
+    },
+    {
+      "title": "Built for any size job",
+      "body": "From a single color-change to a fleet of 500, on vehicles up to 14′ high and 53′ long. No project is too big or too small.",
+      "icon": "Layers"
+    },
+    {
+      "title": "Premium materials only",
+      "body": "Eco-friendly, high-quality vinyl, ink and lamination for a depth of color and durability that holds up — some wraps show no fade after five years.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Local, reachable and trusted",
+      "body": "A real Kenilworth shop you can visit, owned and run by Mario Boccongelli, serving Union County and the wider NJ / NY metro.",
+      "icon": "MapPin"
+    }
+  ]
+}

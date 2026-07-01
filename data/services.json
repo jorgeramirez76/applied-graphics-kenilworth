@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "vehicle-wraps",
+    "name": "Full Vehicle Wraps",
+    "icon": "Car",
+    "category": "Wraps",
+    "short": "Cars, vans, trucks and SUVs wrapped on all sides — sometimes the roof too — turning your vehicle into a rolling billboard.",
+    "long": "A full wrap covers all four sides of the vehicle (and often the roof) in printed, color-matched 3M vinyl. Our art department designs from concept to completion, we print on premium materials, and our 3M-certified installers finish every panel bubble- and wrinkle-free. Whether it's one custom piece or a fleet of 500, your vehicle becomes 24/7 advertising the moment it leaves the shop.",
+    "features": [
+      "Concept-to-completion in-house design",
+      "Premium 3M cast vinyl, color-matched",
+      "Bubble- and wrinkle-free certified installation",
+      "Backed by the 3M MCS warranty"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "fleet-graphics",
+    "name": "Fleet Graphics",
+    "icon": "Truck",
+    "category": "Wraps",
+    "short": "Consistent, brand-perfect graphics across your entire fleet — from two vans to two hundred.",
+    "long": "Fleet wraps keep your brand identical across every vehicle, so your trucks and vans read as one professional operation on the road. We manage color consistency, repeatable templates and scheduling so additions and replacements years from now still match. Ideal for contractors, service companies, food trucks and delivery fleets.",
+    "features": [
+      "Repeatable, color-consistent templates",
+      "Scheduling for large rollouts",
+      "Re-orders that match years later",
+      "On-site or on-the-road installation"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "partial-wraps-lettering",
+    "name": "Partial Wraps, Vinyl & Lettering",
+    "icon": "Type",
+    "category": "Wraps",
+    "short": "High-impact partial wraps, vinyl graphics, decals and cut lettering — maximum visibility, smaller budget.",
+    "long": "Not every job needs a full wrap. Partial wraps, spot graphics, cut vinyl lettering and decals deliver professional brand presence at a lower price point. Perfect for adding a logo, phone number and services to a clean vehicle, or refreshing an existing wrap.",
+    "features": [
+      "Cut vinyl lettering & logos",
+      "Spot graphics and door decals",
+      "Reflective and specialty vinyls",
+      "Quick turnaround on lettering jobs"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "color-change-wraps",
+    "name": "Color-Change Wraps",
+    "icon": "Palette",
+    "category": "Wraps",
+    "short": "Change your vehicle's color — gloss, matte, satin or specialty finishes — without touching the paint.",
+    "long": "A color-change wrap transforms the look of a personal or showcase vehicle and protects the factory paint underneath. Choose from gloss, matte, satin, metallic and specialty 3M finishes. Fully reversible and warranty-backed.",
+    "features": [
+      "Gloss, matte, satin & metallic finishes",
+      "Protects original factory paint",
+      "Reversible without damage",
+      "Premium 3M material"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "food-truck-wraps",
+    "name": "Food Truck Wraps",
+    "icon": "ChefHat",
+    "category": "Wraps",
+    "short": "Make hungry customers turn their heads — appetizing, durable food-truck and trailer wraps.",
+    "long": "Food trucks live and die on brand recognition. We design and install mouth-watering wraps that showcase your menu and pull customers in with a glance. Built with quality 3M vinyls to survive heat, grease and constant washing. Our designers bring decades of combined vehicle-wrap experience to every build.",
+    "features": [
+      "Appetite-driven design",
+      "Heat- and wash-durable 3M vinyl",
+      "Menu, branding & social call-outs",
+      "Trailers, carts and full trucks"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "race-car-graphics",
+    "name": "Race Car & Performance Graphics",
+    "icon": "Flag",
+    "category": "Wraps",
+    "short": "Track-tested wraps, sponsor liveries and lettering that hold up at speed.",
+    "long": "From street performance builds to track-prepped race cars, we produce sponsor liveries, numbers and full graphics that survive real racing conditions. Customers have run our wraps through full track seasons with no fade or lift.",
+    "features": [
+      "Sponsor liveries & numbering",
+      "Track-durable materials",
+      "Show-quality finish",
+      "Performance and show vehicles"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "trains-buses-trucks",
+    "name": "Trains, Buses & Box Trucks",
+    "icon": "Bus",
+    "category": "Wraps",
+    "short": "Large-format wraps for the biggest canvases on the road and rail.",
+    "long": "Our 6,000 sq ft facility handles vehicles up to 14 feet high and 53 feet long, so box trucks, trailers, buses and rail cars are right in our wheelhouse. Big surfaces, big impressions — installed cleanly, panel by panel.",
+    "features": [
+      "Box trucks, trailers & buses",
+      "Vehicles up to 14'H × 53'L",
+      "Mobile treatment & specialty units",
+      "Large-format color consistency"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "interior-exterior-graphics",
+    "name": "Interior & Exterior Building Graphics",
+    "icon": "Building2",
+    "category": "Signage",
+    "short": "Wall murals, lobby & office branding, storefronts and exterior building signage — your space, head to toe.",
+    "long": "We brand buildings inside and out. Floor-to-ceiling wall murals and photo collages, lobby and office environmental graphics, dimensional letters and logos, storefront and exterior building signage — printed and installed on-site to transform a whole space. From a single feature wall to a full-building rollout, we measure, design, produce and install.",
+    "features": [
+      "Wall murals & photo-collage walls",
+      "Lobby, office & gym environmental branding",
+      "Dimensional letters & logos",
+      "Exterior building signage & storefronts"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "architectural-finishes",
+    "name": "Architectural Finishes & 3M DI-NOC",
+    "icon": "Building2",
+    "category": "Signage",
+    "short": "3M DI-NOC architectural films that resurface interiors, walls and windows without a renovation.",
+    "long": "3M DI-NOC architectural finishes let you transform doors, walls, elevators, columns and fixtures with the look of wood, metal, stone or custom color — at a fraction of replacement cost. We install and replace DI-NOC across interiors, storefront windows and exteriors.",
+    "features": [
+      "Wood, metal, stone & custom looks",
+      "Interior, window & exterior surfaces",
+      "Install and replacement",
+      "Renovation looks without the renovation"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "window-graphics",
+    "name": "Window Graphics & Perforation",
+    "icon": "PanelsTopLeft",
+    "category": "Signage",
+    "short": "Storefront window graphics and see-through perforated film that advertises without blocking the view.",
+    "long": "Turn storefront glass into marketing space with cut vinyl, frosted privacy film and one-way perforated window graphics that let light and sightlines through from the inside. Great for retail, restaurants and offices.",
+    "features": [
+      "One-way perforated window film",
+      "Frosted & privacy graphics",
+      "Storefront branding",
+      "Promotions & hours lettering"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "banners-signs",
+    "name": "Banners, Signs & Magnets",
+    "icon": "Flag",
+    "category": "Signage",
+    "short": "Banners, building and wall signage, magnets and large-format prints for events and storefronts.",
+    "long": "Beyond vehicles, we produce banners, building and wall signage, vehicle magnets and large-format prints up to 60 inches wide and 150 feet long. High-quality material, ink and lamination for indoor or outdoor durability.",
+    "features": [
+      "Indoor & outdoor banners",
+      "Building & wall signage",
+      "Vehicle magnets",
+      "Prints up to 60\" × 150'"
+    ],
+    "verified": true
+  },
+  {
+    "slug": "design-installation",
+    "name": "In-House Design & Installation",
+    "icon": "PencilRuler",
+    "category": "Service",
+    "short": "A full art department plus 3M-certified installers — concept, print and install all under one roof.",
+    "long": "Our fully staffed art department designs your project from concept to completion, and our 3M-certified installers finish it — in our heated/cooled shop or on the road at your location. We also provide site surveys so large installs are measured and planned correctly the first time.",
+    "features": [
+      "Full in-house art department",
+      "3M-certified installation crew",
+      "On-the-road / on-site install",
+      "Site surveys for large projects"
+    ],
+    "verified": true
+  }
+]

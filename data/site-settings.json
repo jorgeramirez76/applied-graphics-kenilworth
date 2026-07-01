@@ -1,0 +1,84 @@
+{
+  "name": "Applied Graphics",
+  "legalName": "Applied Graphics Inc.",
+  "tagline": "The wrap with a warranty.",
+  "subTagline": "Vehicle wraps, building interiors & exteriors, and large-format signage — engineered in Kenilworth, NJ since 1978.",
+  "shortDescription": "Applied Graphics Inc. is a 3M-certified graphics company in Kenilworth, New Jersey, branding vehicles and buildings inside and out — vehicle and fleet wraps, wall murals, storefront and window graphics, architectural finishes and large-format signage. From a single color-change to a 500-vehicle fleet or a full building, we design, print and install it all under one roof.",
+  "phone": "+19086209600",
+  "phoneDisplay": "(908) 620-9600",
+  "fax": "+19086209601",
+  "faxDisplay": "(908) 620-9601",
+  "email": "",
+  "emailNote": "No public email address was verified. Contact is handled via the on-site quote form and phone. Applied Graphics to provide a preferred public email before launch.",
+  "address": {
+    "street": "718 B Jefferson Ave",
+    "city": "Kenilworth",
+    "state": "NJ",
+    "stateLong": "New Jersey",
+    "zip": "07033",
+    "county": "Union County"
+  },
+  "geo": {
+    "lat": 40.6792,
+    "lng": -74.2889,
+    "note": "Approximate coordinates for 718 B Jefferson Ave, Kenilworth NJ. Verify exact pin before launch."
+  },
+  "mapsQuery": "Applied Graphics Inc, 718 B Jefferson Ave, Kenilworth, NJ 07033",
+  "hours": [
+    { "day": "Monday", "open": "09:00", "close": "17:00" },
+    { "day": "Tuesday", "open": "09:00", "close": "17:00" },
+    { "day": "Wednesday", "open": "09:00", "close": "17:00" },
+    { "day": "Thursday", "open": "09:00", "close": "17:00" },
+    { "day": "Friday", "open": "09:00", "close": "17:00" },
+    { "day": "Saturday", "open": null, "close": null },
+    { "day": "Sunday", "open": null, "close": null }
+  ],
+  "hoursNote": "Open Monday–Friday 9:00 AM – 5:00 PM. Closed weekends. Source: public business listing — confirm before launch.",
+  "officialWebsite": "https://www.appliedgrafx.com",
+  "social": {
+    "facebook": "https://www.facebook.com/AGFXNJ/",
+    "instagram": "https://www.instagram.com/appliedgrafx/",
+    "linkedin": "",
+    "youtube": ""
+  },
+  "founded": "1978",
+  "incorporated": "1998",
+  "yearsInBusiness": 48,
+  "experienceClaim": "Three-plus decades specializing in vehicle wraps; in business since 1978 (BBB).",
+  "ownerName": "Mario Boccongelli",
+  "ownerTitle": "President",
+  "trust": {
+    "bbbRating": "A+",
+    "bbbAccreditedSince": "2008",
+    "bbbProfile": "https://www.bbb.org/us/nj/kenilworth/profile/graphic-designer/applied-graphics-inc-0221-90033973",
+    "aggregateRating": 4.9,
+    "aggregateReviewCount": 13,
+    "facebookRecommendRate": "100%"
+  },
+  "certifications": [
+    "3M-Certified Installers",
+    "3M MCS Warranty Materials",
+    "BBB Accredited Business (A+)"
+  ],
+  "capabilities": {
+    "facilitySqFt": 6000,
+    "facilityNote": "Indoor heated/cooled facility",
+    "maxVehicleHeightFt": 14,
+    "maxVehicleLengthFt": 53,
+    "maxPrintWidthIn": 60,
+    "maxPrintLengthFt": 150,
+    "onTheRoadInstall": true
+  },
+  "serviceAreaSummary": "New Jersey, New York, Philadelphia, Connecticut and Boston — with an installer network nationwide. Located 27 minutes from Manhattan with easy highway access.",
+  "primaryCity": "Kenilworth",
+  "ctas": {
+    "quote": "Request a Quote",
+    "work": "View Our Work",
+    "call": "Call Now"
+  },
+  "industryStat": {
+    "value": "600+",
+    "label": "visual impressions per mile driven",
+    "source": "American Trucking Association (cited on appliedgrafx.com)"
+  }
+}

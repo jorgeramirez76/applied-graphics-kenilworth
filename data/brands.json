@@ -1,0 +1,12 @@
+{
+  "intro": "From local studios to national brands and world-stage venues.",
+  "brands": [
+    { "name": "World Cup", "detail": "MetLife Stadium", "logo": "world-cup.svg" },
+    { "name": "Coca-Cola", "detail": "Brand & equipment", "logo": "coca-cola.svg" },
+    { "name": "Amazon", "detail": "Fleet & facility", "logo": "amazon.svg" },
+    { "name": "Delta", "detail": "Airport graphics", "logo": "delta.svg" },
+    { "name": "Costa Coffee", "detail": "Machine wraps", "logo": null },
+    { "name": "Notorious", "detail": "Boxing Club, Brooklyn", "logo": null }
+  ],
+  "note": "Brand and venue names/logos reflect projects Applied Graphics has produced graphics for, provided by the company. Logos shown are standard brand marks rendered monochrome. Confirm written authorization to publicly display each brand name/logo before launch — some national brands restrict vendor use."
+}
