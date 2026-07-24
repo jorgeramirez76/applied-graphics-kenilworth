@@ -120,7 +120,12 @@ export function Footer() {
 
       <div className="relative border-t border-white/10">
         <div className="container flex flex-col items-center justify-between gap-3 py-6 text-xs text-ash sm:flex-row">
-          <p className="font-mono">© {year} {site.legalName}</p>
+          <p className="font-mono">
+            © {year} {site.legalName} · Website by{' '}
+            <a href="https://clickmingo.com" target="_blank" rel="noopener" className="hover:text-fog">
+              ClickMingo
+            </a>
+          </p>
           <p className="font-mono uppercase tracking-wider">Kenilworth · Union County · NJ / NY Metro</p>
         </div>
       </div>
