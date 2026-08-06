@@ -16,8 +16,24 @@ import { Icon } from '@/components/Icon';
 import { Magnetic } from '@/components/motion/Magnetic';
 import { FaqAccordion } from '@/components/FaqAccordion';
 import { JsonLd } from '@/components/JsonLd';
-import { faqSchema, breadcrumbSchema } from '@/lib/schema';
+import {
+  faqSchema,
+  breadcrumbSchema,
+  websiteSchema,
+  personSchema,
+  heroVideoSchema,
+} from '@/lib/schema';
 import { services, projectsWithImages, reviews, clients, serviceAreas } from '@/lib/data';
+import { pageMetadata } from '@/lib/seo';
+
+// The homepage previously exported no metadata at all, so it shipped with no
+// canonical, no og:url and no og:image — on the single most important URL.
+export const metadata = pageMetadata({
+  title: 'Vehicle Wraps & Signage in Kenilworth, NJ',
+  description:
+    'Applied Graphics Inc. has wrapped vehicles and branded buildings from Kenilworth, New Jersey since 1978. 3M-certified installers, 3M MCS warranty, 6,000 sq ft indoor bay.',
+  path: '/',
+});
 
 export default function HomePage() {
   const featured = projectsWithImages.filter((p) => p.featured).slice(0, 6);
@@ -38,7 +54,15 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={[faqSchema(), breadcrumbSchema([{ name: 'Home', path: '/' }])]} />
+      <JsonLd
+        data={[
+          websiteSchema(),
+          personSchema(),
+          heroVideoSchema(),
+          faqSchema(),
+          breadcrumbSchema([{ name: 'Home', path: '/' }]),
+        ]}
+      />
       <WrapHero />
 
       <section className="relative overflow-hidden border-t border-white/[0.06] bg-carbon py-16">

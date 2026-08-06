@@ -16,7 +16,7 @@ import { site } from '@/lib/data';
 export const metadata = pageMetadata({
   title: 'About Us',
   description:
-    'Applied Graphics Inc. has designed, printed and installed vehicle wraps and large-format graphics in Kenilworth, NJ since 1978 — 3M-certified, BBB A+, family-run.',
+    'Applied Graphics Inc. has designed, printed and installed vehicle wraps and large-format graphics in Kenilworth, NJ since 1978 — 3M-certified installers, BBB A+ with zero complaints.',
   path: '/about',
 });
 

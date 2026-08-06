@@ -12,6 +12,9 @@ import { localBusinessSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/seo';
 import { site } from '@/lib/data';
 
+// GitHub Pages serves under /<repo>; scope prerendering to our own subpath.
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const display = Archivo({
   subsets: ['latin'],
   axes: ['wdth'],
@@ -61,6 +64,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <JsonLd data={localBusinessSchema()} />
+        {/* Speculation Rules: Chromium prerenders a same-origin link on hover
+            intent. Unsupported engines ignore an unknown script type entirely,
+            so this is free — and it needs no server, which matters on Pages. */}
+        <script
+          type="speculationrules"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              prerender: [{ where: { href_matches: `${BASE_PATH}/*` }, eagerness: 'moderate' }],
+            }),
+          }}
+        />
         <ScrollProgress />
         <Cursor />
         <MobileCTABar />
