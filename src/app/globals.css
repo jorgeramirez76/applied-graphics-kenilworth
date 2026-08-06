@@ -131,16 +131,116 @@ html.lenis body {
   to { opacity: 1; }
 }
 
-/* Scroll-scrub track. Real CSS rather than a Tailwind arbitrary value so the
-   vh line can sit underneath as a fallback for engines without small-viewport
-   units — you can't declare the same property twice in one utility class. */
-.wrap-track {
-  height: 320vh;
-  height: 320svh;
+/* ---------- WrapHero: the cinema plate ---------- */
+:root { --hdr: 4rem; }                                    /* h-16 mobile bar */
+@media (min-width: 768px) { :root { --hdr: 6.75rem; } }   /* h-9 strip + 4.5rem bar */
+
+/* Static by default — the pin is OPT-IN. JS adds .is-scrub only when motion is
+   allowed, so reduced-motion / no-JS / hydration failure can never strand a
+   visitor in an empty multi-viewport runway. */
+.cine-track { position: relative; }
+.cine-stage {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--hdr);
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: clip;
 }
-.wrap-stage {
+/* svh on the track: the scrub must COMPLETE before the section leaves even
+   with the mobile URL bar expanded. lvh on the stage: once the bar retracts,
+   nothing peeks out under the plate. Never dvh — it resizes mid-scroll. */
+.cine-track.is-scrub { height: 280vh; height: 280svh; }
+.cine-track.is-scrub.is-short { height: 240vh; height: 240svh; }
+.cine-track.is-scrub .cine-stage {
+  position: sticky;
+  top: 0;
+  min-height: 0;
   height: 100vh;
-  height: 100svh;
+  height: 100lvh;
+}
+
+.cine-title { flex: 0 0 auto; padding-top: 0.875rem; padding-bottom: 1.25rem; }
+
+.cine-platewrap { position: relative; flex: 1 1 auto; min-height: 0; }
+.cine-plate {
+  position: absolute;
+  inset-inline: 0;
+  top: 50%;
+  translate: 0 -50%;
+  height: 100%;
+  /* Derived from the MEASURED van bbox in this clip: x[0.158,0.786],
+     y[0.222,0.735]. max-height keeps a portrait band wide enough for nose and
+     tail; min-height keeps a landscape band tall enough for roof and tyres.
+     Re-render the clip with different framing and BOTH numbers are wrong. */
+  max-height: 81vw;
+  min-height: calc(100vw / 3.2);
+  overflow: clip;
+  isolation: isolate;
+  /* blends the plate's cut edges into the ink bands above and below */
+  box-shadow: inset 0 40px 56px -34px #0a0a0c, inset 0 -40px 56px -34px #0a0a0c;
+}
+.cine-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* ONE value, correct in BOTH orientations: taller-than-16:9 band crops
+     horizontally (41% governs), wider crops vertically (44% governs). Neither
+     ever touches the vehicle. */
+  object-position: 41% 44%;
+}
+.cine-wrapped { opacity: var(--p); z-index: 10; }
+.cine-video { z-index: 20; opacity: 0; transition: opacity 0.22s linear; }
+.cine-video[data-ready='1'] { opacity: 1; }
+
+.cine-rail {
+  flex: 0 0 auto;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 100lvh - 100svh);
+}
+.cine-progress { height: 2px; background: rgba(255, 255, 255, 0.12); }
+.cine-progress::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: calc(var(--p) * 100%);
+  background: #e8202e;
+  box-shadow: 0 0 12px rgba(232, 32, 46, 0.8);
+}
+/* Hint and stat share one grid cell; the track's data-stage swaps them.
+   0 = blank van (hint), 1 = mid-install (neither), 2 = finished (stat). */
+.cine-swap { display: grid; align-items: center; }
+.cine-swap > * { grid-area: 1 / 1; justify-self: end; }
+.cine-hint { opacity: 0; transition: opacity 0.3s linear; }
+.cine-stat { opacity: 0; transition: opacity 0.3s linear; }
+.cine-track[data-stage='0'] .cine-hint { opacity: 1; }
+.cine-track[data-stage='2'] .cine-stat { opacity: 1; }
+
+/* Short landscape + ultrawide: reclaim vertical budget so the min-height floor
+   never overflows the platewrap. Not optional polish. */
+@media (max-height: 820px) and (min-aspect-ratio: 5/4), (min-aspect-ratio: 2/1) {
+  .cine-title h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
+  .cine-sub { display: none; }
+  .cine-title { padding-bottom: 0.75rem; }
+  .cine-rail { font-size: 90%; }
+}
+/* Very short phones */
+@media (max-height: 700px) and (max-aspect-ratio: 5/4) {
+  .cine-sub { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cine-track { height: auto !important; }
+  .cine-track .cine-stage { position: static !important; height: auto !important; min-height: 100svh !important; }
+}
+
+/* The header re-blurring the whole viewport on every scrubbed frame is the
+   single biggest compositing cost over the hero — and over flat ink it blurs
+   nothing. Attribute set by WrapHero on mount. */
+html[data-hero] .site-header-bar {
+  backdrop-filter: none !important;
+  background-color: rgb(10 10 12 / 0.92) !important;
 }
 
 @layer utilities {

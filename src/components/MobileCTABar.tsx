@@ -16,7 +16,14 @@ export function MobileCTABar() {
     const onScroll = () => {
       const y = window.scrollY;
       const nearBottom = window.innerHeight + y >= document.documentElement.scrollHeight - 180;
-      setVisible(y > 480 && !nearBottom);
+      // On the homepage, wait for the pinned hero to release — docking a fixed
+      // bar over its rail mid-scrub would re-block the exact thing the hero
+      // exists to show. Pages without #wrap-hero keep the old 480px gate.
+      const hero = document.getElementById('wrap-hero');
+      const gate = hero
+        ? hero.offsetTop + hero.offsetHeight - window.innerHeight * 0.35
+        : 480;
+      setVisible(y > gate && !nearBottom);
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });

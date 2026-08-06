@@ -18,6 +18,9 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
 
   // Init Lenis once.
   useGSAP(() => {
+    // A reload mid-page would restore scroll before the hero's video exists,
+    // leaving its poster contradicting the progress rail. Fresh start instead.
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const lenis = new Lenis({
       duration: 1.15,

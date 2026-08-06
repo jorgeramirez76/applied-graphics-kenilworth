@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AnimatedHeading } from './motion/AnimatedHeading';
+import { VinylBackdrop } from './three/VinylBackdrop';
 
 export function PageHero({
   eyebrow,
@@ -16,8 +17,12 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden bg-ink pt-32 lg:pt-44">
-      <div className="absolute inset-0 bg-grid-faint bg-[size:48px_48px] opacity-40" />
       <div className="absolute -left-32 -top-24 h-[28rem] w-[28rem] animate-drift rounded-full bg-brand/15 blur-[130px]" />
+      {/* WebGL "liquid vinyl" — moved here when the homepage hero became the
+          real van. Self-gating (WebGL2 probe, save-data, reduced motion). */}
+      <VinylBackdrop intensity={0.7} />
+      <div className="absolute inset-0 bg-ink/40" />
+      <div className="absolute inset-0 bg-grid-faint bg-[size:48px_48px] opacity-40" />
       {index && (
         <span className="pointer-events-none absolute -right-4 top-20 select-none font-display text-[26vw] leading-none text-white/[0.025] lg:text-[18vw]">
           {index}

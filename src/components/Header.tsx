@@ -22,7 +22,9 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    // 40, not 12: at 12 the bar goes solid within one thumb twitch, slamming
+    // an opaque slab above the hero h1 the instant the tease starts.
+    const onScroll = () => setScrolled(window.scrollY > 40);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -30,7 +32,10 @@ export function Header() {
   useEffect(() => setOpen(false), [pathname]);
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-[80]">
+    <header
+      className="pointer-events-none fixed inset-x-0 top-0 z-[80]"
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
+    >
       {/* utility strip */}
       <div
         className={`pointer-events-auto hidden border-b border-white/5 transition-colors md:block ${
@@ -51,7 +56,7 @@ export function Header() {
 
       {/* main bar */}
       <div
-        className={`pointer-events-auto transition-all duration-500 ${
+        className={`site-header-bar pointer-events-auto transition-all duration-500 ${
           scrolled
             ? 'border-b border-white/10 bg-ink/80 backdrop-blur-xl'
             : 'border-b border-transparent bg-transparent'
@@ -86,15 +91,26 @@ export function Header() {
             </Magnetic>
           </div>
 
+          {/* Phones otherwise have no phone number in the header at any
+              scroll position — the utility strip is hidden below md. */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <a
+              href={telHref}
+              aria-label={`Call ${site.phoneDisplay}`}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-bone"
+            >
+              <Icon name="Phone" className="h-5 w-5 text-brand" strokeWidth={1.8} />
+            </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-bone lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-bone"
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
           >
             <Icon name={open ? 'X' : 'Menu'} className="h-5 w-5" strokeWidth={1.8} />
           </button>
+          </div>
         </div>
       </div>
 
@@ -139,8 +155,10 @@ function Logo() {
         <span className="absolute inset-0 -translate-x-full bg-white/30 transition-transform duration-500 group-hover:translate-x-full" />
       </span>
       <span className="leading-none">
-        <span className="block font-display text-lg uppercase tracking-tight text-bone">Applied Graphics</span>
-        <span className="spec block text-[9px] text-brand">Wraps · Signage · Print</span>
+        <span className="block whitespace-nowrap font-display text-base uppercase tracking-tight text-bone sm:text-lg">
+          Applied Graphics
+        </span>
+        <span className="spec block whitespace-nowrap text-[9px] text-brand">Wraps · Signage · Print</span>
       </span>
     </Link>
   );

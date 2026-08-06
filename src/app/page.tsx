@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Hero } from '@/components/Hero';
+import { WrapHero } from '@/components/WrapHero';
+import { HeroPromiseStrip } from '@/components/HeroPromiseStrip';
 import { Marquee } from '@/components/Marquee';
 import { StatBar } from '@/components/StatBar';
 import { SectionHeading } from '@/components/SectionHeading';
@@ -7,7 +8,6 @@ import { ServiceCard } from '@/components/ServiceCard';
 import { ProjectCard } from '@/components/ProjectCard';
 import { ReviewCard } from '@/components/ReviewCard';
 import { CTASection } from '@/components/CTASection';
-import { WrapScrub } from '@/components/WrapScrub';
 import { BrandStrip } from '@/components/BrandStrip';
 import { EnvironmentalSection } from '@/components/EnvironmentalSection';
 import { ProcessTimeline } from '@/components/ProcessTimeline';
@@ -39,7 +39,29 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={[faqSchema(), breadcrumbSchema([{ name: 'Home', path: '/' }])]} />
-      <Hero />
+      <WrapHero />
+
+      <section className="relative overflow-hidden border-t border-white/[0.06] bg-carbon py-16">
+        <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-brand/10 blur-[140px]" />
+        <div className="container relative flex flex-wrap items-center justify-between gap-8">
+          <p className="max-w-xl font-display text-2xl uppercase leading-tight text-bone sm:text-3xl">
+            That was a render. <span className="text-brand">Yours would be a real one</span>, measured
+            and installed in our Kenilworth bay.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Magnetic>
+              <Link href="/contact" data-cursor className="btn-primary">
+                Wrap My Vehicle <Icon name="ArrowRight" className="h-4 w-4" />
+              </Link>
+            </Magnetic>
+            <Link href="/portfolio" data-cursor className="btn-outline">
+              See real jobs
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <HeroPromiseStrip />
       <Marquee items={marqueeItems} />
       <StatBar />
       <BrandStrip />
@@ -73,29 +95,6 @@ export default function HomePage() {
 
       {/* Interior & exterior graphics — buildings, not just vehicles */}
       <EnvironmentalSection />
-
-      {/* The signature moment — scroll down to wrap, scroll up to peel */}
-      <WrapScrub />
-
-      <section className="relative overflow-hidden border-t border-white/[0.06] bg-carbon py-20">
-        <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-brand/10 blur-[140px]" />
-        <div className="container relative flex flex-wrap items-center justify-between gap-8">
-          <p className="max-w-xl font-display text-2xl uppercase leading-tight text-bone sm:text-3xl">
-            That was a render. <span className="text-brand">Yours would be a real one</span>, measured
-            and installed in our Kenilworth bay.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Magnetic>
-              <Link href="/contact" data-cursor className="btn-primary">
-                Wrap My Vehicle <Icon name="ArrowRight" className="h-4 w-4" />
-              </Link>
-            </Magnetic>
-            <Link href="/portfolio" data-cursor className="btn-outline">
-              See real jobs
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Featured work */}
       <section className="section bg-ink">
