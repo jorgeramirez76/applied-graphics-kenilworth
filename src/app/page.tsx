@@ -7,7 +7,7 @@ import { ServiceCard } from '@/components/ServiceCard';
 import { ProjectCard } from '@/components/ProjectCard';
 import { ReviewCard } from '@/components/ReviewCard';
 import { CTASection } from '@/components/CTASection';
-import { WrapReveal } from '@/components/WrapReveal';
+import { WrapScrub } from '@/components/WrapScrub';
 import { BrandStrip } from '@/components/BrandStrip';
 import { EnvironmentalSection } from '@/components/EnvironmentalSection';
 import { ProcessTimeline } from '@/components/ProcessTimeline';
@@ -74,34 +74,26 @@ export default function HomePage() {
       {/* Interior & exterior graphics — buildings, not just vehicles */}
       <EnvironmentalSection />
 
-      {/* Compare slider feature */}
-      <section className="section relative overflow-hidden bg-carbon">
+      {/* The signature moment — scroll down to wrap, scroll up to peel */}
+      <WrapScrub />
+
+      <section className="relative overflow-hidden border-t border-white/[0.06] bg-carbon py-20">
         <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-brand/10 blur-[140px]" />
-        <div className="container relative grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <SectionHeading
-              eyebrow="The difference"
-              title="Your vehicle is unused ad space."
-              intro="A plain white van says nothing. Scroll, and watch it get wrapped — turning every mile into 600+ impressions a day."
-            />
-            <Reveal>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Magnetic>
-                  <Link href="/contact" data-cursor className="btn-primary">
-                    Wrap My Vehicle <Icon name="ArrowRight" className="h-4 w-4" />
-                  </Link>
-                </Magnetic>
-                <Link href="/portfolio" data-cursor className="btn-outline">See the work</Link>
-              </div>
-            </Reveal>
+        <div className="container relative flex flex-wrap items-center justify-between gap-8">
+          <p className="max-w-xl font-display text-2xl uppercase leading-tight text-bone sm:text-3xl">
+            That was a render. <span className="text-brand">Yours would be a real one</span>, measured
+            and installed in our Kenilworth bay.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Magnetic>
+              <Link href="/contact" data-cursor className="btn-primary">
+                Wrap My Vehicle <Icon name="ArrowRight" className="h-4 w-4" />
+              </Link>
+            </Magnetic>
+            <Link href="/portfolio" data-cursor className="btn-outline">
+              See real jobs
+            </Link>
           </div>
-          <Reveal>
-            <WrapReveal
-              blankSrc="/images/van-blank.webp"
-              wrappedSrc="/images/van-wrapped.webp"
-              alt="A plain white van being wrapped with the Applied Graphics design"
-            />
-          </Reveal>
         </div>
       </section>
 

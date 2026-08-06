@@ -6,6 +6,7 @@ import { Icon } from './Icon';
 import { Magnetic } from './motion/Magnetic';
 import { gsap, useGSAP } from '@/lib/gsap';
 import { site, telHref } from '@/lib/data';
+import { VinylBackdrop } from './three/VinylBackdrop';
 
 export function Hero() {
   const root = useRef<HTMLElement>(null);
@@ -49,10 +50,13 @@ export function Hero() {
       ref={root}
       className="relative flex min-h-[100svh] items-center overflow-hidden bg-ink pt-28 lg:pt-32"
     >
-      {/* atmosphere */}
-      <div className="absolute inset-0 bg-grid-faint bg-[size:46px_46px] opacity-40" />
+      {/* atmosphere — CSS layer is the floor; WebGL layers on top when the
+          device can afford it and the visitor hasn't asked for less motion. */}
       <div className="absolute -left-40 top-10 h-[40rem] w-[40rem] animate-drift rounded-full bg-brand/20 blur-[150px]" />
       <div className="absolute right-0 top-1/3 h-96 w-96 rounded-full bg-brand/[0.08] blur-[120px]" />
+      <VinylBackdrop intensity={0.85} />
+      <div className="absolute inset-0 bg-ink/45" />
+      <div className="absolute inset-0 bg-grid-faint bg-[size:46px_46px] opacity-40" />
       {/* giant backdrop word */}
       <span
         data-parallax="8"
@@ -136,16 +140,18 @@ export function Hero() {
             <div className="hero-visual overflow-hidden rounded-2xl border border-white/10 bg-graphite p-2.5 shadow-glow">
               <div data-parallax="-6" className="relative aspect-[5/3.4] overflow-hidden rounded-xl">
                 <Image
-                  src="/images/applied-graphics-company-van.webp"
-                  alt="Applied Graphics' own branded company van — a full-color vehicle wrap"
+                  src="/images/wrap-demo-van-wrapped.webp"
+                  alt="A high-roof cargo van finished in a full Applied Graphics vinyl wrap inside an install bay"
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 440px"
-                  className="scale-110 object-cover"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
+                {/* Labelled as a render on purpose — every photo on this site is
+                    either a real job or says it isn't. */}
                 <span className="absolute left-3 top-3 font-mono text-[9px] uppercase tracking-wider text-bone/70">
-                  ▢ Live install · Kenilworth bay
+                  ▢ Design render · full wrap
                 </span>
               </div>
             </div>

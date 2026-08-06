@@ -127,6 +127,22 @@ html.lenis body {
   }
 }
 
+@keyframes fadein {
+  to { opacity: 1; }
+}
+
+/* Scroll-scrub track. Real CSS rather than a Tailwind arbitrary value so the
+   vh line can sit underneath as a fallback for engines without small-viewport
+   units — you can't declare the same property twice in one utility class. */
+.wrap-track {
+  height: 320vh;
+  height: 320svh;
+}
+.wrap-stage {
+  height: 100vh;
+  height: 100svh;
+}
+
 @layer utilities {
   .text-stroke {
     -webkit-text-stroke: 1.4px rgba(244,241,234,0.55);

@@ -8,7 +8,7 @@ import { gsap, useGSAP } from '@/lib/gsap';
  */
 export function AnimatedHeading({
   text,
-  as: Tag = 'h2',
+  as = 'h2',
   className = '',
   delay = 0,
 }: {
@@ -18,6 +18,10 @@ export function AnimatedHeading({
   delay?: number;
 }) {
   const ref = useRef<HTMLElement>(null);
+  // React 19's types resolve a bare `ElementType` tag's children to `never`.
+  // Narrowing to a known intrinsic tag restores ref/className/children typing
+  // without constraining what callers may pass.
+  const Tag = as as 'h2';
 
   useGSAP(
     () => {
@@ -39,7 +43,7 @@ export function AnimatedHeading({
   );
 
   return (
-    <Tag ref={ref as never} className={className}>
+    <Tag ref={ref as React.Ref<HTMLHeadingElement>} className={className}>
       {text.split(' ').map((w, i) => (
         <span key={i} className="inline-block overflow-hidden align-bottom pb-[0.08em]">
           <span className="ah-word inline-block">{w}&nbsp;</span>

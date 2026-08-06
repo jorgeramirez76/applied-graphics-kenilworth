@@ -1,6 +1,9 @@
 import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/seo';
 
+// Required by Next 15+ for metadata routes under `output: 'export'`.
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ['', '/about', '/services', '/portfolio', '/clients', '/reviews', '/service-area', '/contact'];
   const now = new Date();
