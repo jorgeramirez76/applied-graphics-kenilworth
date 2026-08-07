@@ -91,11 +91,18 @@ Mobile/on-site install · Vinyl removal
 Revamp Wraps (3M DI-NOC) and Applied Graphics claim any certification; no competitor's site
 is built to be read by AI answer engines.
 
+## Client-attested (owner's account — publishable, but not externally corroborated)
+- **World Cup work: done at MetLife Stadium, New Jersey, for the World Cup.** Scope is that
+  venue — attested by Jorge 2026-08-06 relaying Mario. My own research pass found no public
+  evidence, which means "I could not confirm it," not "it did not happen." Describe it as what
+  it is: graphics produced for World Cup activity at MetLife Stadium in East Rutherford, NJ.
+  Do not reproduce FIFA logos, the official competition wordmark, or trade dress — describing
+  your own work at a venue is a statement of fact; using the marks is a licensing question.
+  Note the tournament finished 2026-07-19, so write it in past tense.
+- Coca-Cola, Amazon, Delta, Costa Coffee, Notorious, Disney — client-supplied, uncorroborated.
+  Jorge elected 2026-08-06 to keep these live. Treat as attested, not verified.
+
 ## DO NOT PUBLISH — unverified
-1. **Any World Cup / MetLife Stadium work.** No evidence found anywhere. The 2026 World Cup
-   ended 2026-07-19, so "coming soon" framing is also stale.
-2. **Coca-Cola, Amazon, Delta, Costa Coffee, Notorious, Disney** credits — client-supplied,
-   uncorroborated.
 3. **Employee count or revenue.** Broker estimates disagree wildly ($1.7M/24 staff vs
    $4.3M/14 vs 2–5 staff). Publish none.
 4. **Any price.** No verified Applied Graphics price exists. NJ market bands from other shops

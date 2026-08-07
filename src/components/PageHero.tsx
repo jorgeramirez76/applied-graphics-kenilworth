@@ -40,7 +40,11 @@ export function PageHero({
         <p className="eyebrow reveal mt-8 inline-block" data-reveal>
           {eyebrow}
         </p>
+        {/* This is the page's topic anchor — it must be the h1. Every subpage
+            previously started at h2, leaving answer engines to infer the
+            subject from <title> alone. */}
         <AnimatedHeading
+          as="h1"
           text={title}
           className="mt-4 max-w-4xl font-display text-[2.75rem] uppercase leading-[0.92] text-bone sm:text-6xl lg:text-7xl"
         />

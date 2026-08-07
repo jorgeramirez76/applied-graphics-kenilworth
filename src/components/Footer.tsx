@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Icon } from './Icon';
 import { Magnetic } from './motion/Magnetic';
 import { site, telHref, fullAddress, formatHours, mapsLink } from '@/lib/data';
+import { longTailPages } from '@/lib/longtail';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -79,6 +80,19 @@ export function Footer() {
               <li key={href}>
                 <Link href={href} className="link-sweep text-steel hover:text-bone">
                   {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Site-wide links so the deep-dive pages are reachable from every
+              page rather than sitting as crawl orphans behind the sitemap. */}
+          <p className="spec mb-4 mt-8 text-brand">Guides</p>
+          <ul className="space-y-3 text-sm">
+            {longTailPages.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/${p.slug}`} className="link-sweep text-steel hover:text-bone">
+                  {p.eyebrow}
                 </Link>
               </li>
             ))}

@@ -27,6 +27,8 @@ export type LongTailPage = {
   serviceSlug: string;
 };
 
-export const longTailPages: LongTailPage[] = [];
+import longTailData from '@data/longtail.json';
+
+export const longTailPages = longTailData as LongTailPage[];
 
 export const getLongTailPage = (slug: string) => longTailPages.find((p) => p.slug === slug);
