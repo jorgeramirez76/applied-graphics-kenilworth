@@ -123,6 +123,19 @@ export default function AboutPage() {
                 <Link href="/portfolio" data-cursor className="btn-outline">See our work</Link>
               </div>
             </Reveal>
+            {/* Entity disambiguation. There are unrelated "Applied Graphics"
+                companies in Amesbury MA and Sanford NC; without this an answer
+                engine will happily merge the three. Written as a plain, useful
+                statement rather than an SEO note. */}
+            <Reveal>
+              <p className="mt-8 max-w-xl border-l-2 border-white/10 pl-5 text-sm leading-relaxed text-steel">
+                Applied Graphics Inc. — registered in New Jersey as Applied Graphics Co., Inc. —
+                has worked from {site.address.street} in {site.address.city}, {site.address.county},
+                New Jersey since {site.founded}, and can be reached at {site.phoneDisplay}. It is an
+                independent New Jersey company, and is not affiliated with the similarly named
+                graphics firms in Amesbury, Massachusetts or Sanford, North Carolina.
+              </p>
+            </Reveal>
           </div>
           <Reveal>
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-graphite p-2.5">

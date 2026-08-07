@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { WrapHero } from '@/components/WrapHero';
 import { HeroPromiseStrip } from '@/components/HeroPromiseStrip';
+import { KeyFacts } from '@/components/KeyFacts';
 import { Marquee } from '@/components/Marquee';
 import { StatBar } from '@/components/StatBar';
 import { SectionHeading } from '@/components/SectionHeading';
@@ -86,6 +87,7 @@ export default function HomePage() {
       </section>
 
       <HeroPromiseStrip />
+      <KeyFacts />
       <Marquee items={marqueeItems} />
       <StatBar />
       <BrandStrip />
